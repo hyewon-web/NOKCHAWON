@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 녹차원 모바일 웹 페이지 </title>
+  <link rel="apple-touch-icon" href="assets/images/fav.ico"><!-- 아이폰 바로가기 아이콘 -->
+  <link rel="shortcut icon" href="assets/images/fav.ico"><!-- 안드로이드폰 -->
+
+  <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+  <link rel="stylesheet" href="assets/css/common.css"><!-- 전체공통 -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/jquery-1.12.4.min.js"></script>
+  <script src="assets/js/swiper.min.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/main.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- overflow: hidden 우측에 위치하는 네비게이션 제어 -->
+    <header id="header">
+      <h1 class="logo">
+        <a href="index.html">
+          <img src="assets/images/common/logo_color.png" alt="녹차원">
+        </a>
+      </h1>
+      <div class="search">
+        <button type="button" class="search_open">
+          <img src="assets/images/common/search-solid.svg" alt="">
+        </button>
+        <div class="search_box">
+          <form id="searchTxt" action="index.html">
+            <label for="search" class="blind-b">검색어 입력</label>
+            <input type="text" name="search" id="search" placeholder="검색">
+            <button class="search_btn"><img src="assets/images/common/search-solid-white.svg" alt="검색"></button>
+          </form>
+          <button class="search_close"><img src="assets/images/common/circle-x.svg" alt="검색"></button>
+        </div>
+      </div>
+      <button class="btn_menu">
+        <!-- 활성화 되면 .active 추가됨 -->
+        <span class="blind-b">메뉴 열기</span>
+        <span class="line top"></span>
+        <span class="line mid"></span>
+        <span class="line btm"></span>
+      </button>
+      <nav id="gnb">
+        <div class="gnb_inner">
+          <div class="gnb_top">
+            <div class="gnb_logo">
+              <a href="index.html" aria-label="녹차원">
+                <!-- absolute로 img 포개어 놓기(컬러이미지 위로 올림) -->
+                <img src="assets/images/common/logo_white.png" alt="">
+              </a>
+            </div>
+            <p>로그인이 필요합니다.</p>
+            <div class="gnb_login clearfix">
+              <a class="login" href="">로그인</a>
+              <a class="join" href="">회원가입</a>
+            </div>
+          </div>
+          <ul>
+            <li class="gnb1">
+              <a href="" data-link="first">제품안내</a>
+              <ul>
+                <li><a href="">녹차</a></li>
+                <li><a href="">전통차/곡물차</a></li>
+                <li><a href="">허브차</a></li>
+                <li><a href="">액상차</a></li>
+                <li><a href="">과실차/아이스티</a></li>
+                <li><a href="">티/라떼/차이</a></li>
+              </ul>
+            </li>
+            <li class="gnb2">
+              <a href="">녹차원 소개</a>
+              <ul>
+                <li><a href="">Brand Story</a></li>
+                <li><a href="">사업부문</a></li>
+                <li><a href="">인증/협약</a></li>
+                <li><a href="">CSR활동</a></li>
+              </ul>
+            </li>
+            <li class="gnb3">
+              <a href="">블로그</a>
+              <ul>
+                <li><a href="">녹차원 소식</a></li>
+                <li><a href="">차 이야기</a></li>
+                <li><a href="">매거진</a></li>
+              </ul>
+            </li>
+            <li class="gnb4">
+              <a href="">고객지원</a>
+              <ul>
+                <li><a href="">공지사항</a></li>
+                <li><a href="">이벤트</a></li>
+                <li><a href="">자주묻는질문(FAQ)</a></li>
+                <li><a href="">문의하기</a></li>
+              </ul>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section id="content" role="main" class="main">
+      <!-- role="main"는 한페이지에 하나만 존재함 -->
+
+      <article id="cnt1">
+        <div class="swiper-container">
+          <!-- 슬라이더 상세 내용 -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="txt">
+                <h3>하루에 차 한 잔,<br>
+                  바쁜 일상 속 여유를 느껴보세요.</h3>
+                <p>녹차원의 맛있는 녹차가 건강한 당신의<br>
+                  하루와 함께 합니다.</p>
+              </div>
+              <img src="assets/images/main/slide1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <div class="txt">
+                <h3>건강한 과일을 그대로<br>
+                  NFC 석류착즙액을 만나보세요.
+                </h3>
+                <p>녹차원의 과일 주스가 활기찬 당신의<br>
+                  하루와 함께 합니다.</p>
+              </div>
+              <img src="assets/images/main/slide2.jpg" alt="">
+
+            </div>
+            <div class="swiper-slide">
+              <div class="idol-water">
+                <h2>아이돌워터스틱</h2>
+                <p>아이돌처럼 가벼운 라인을 위한 잇템!<br>
+                  똑똑한 수분 충전!
+                </p>
+              </div>
+              <img src="assets/images/main/slide3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <div class="txt">
+                <h3>맛있는 녹차작설<br>
+                  선물세트
+                </h3>
+                <p>고마운 분께 드리는 특별한 선물<br>
+                  차 한잔의 쉼, 그리고 여유를 선물해 보세요.
+                </p>
+              </div>
+              <img src="assets/images/main/slide4.jpg" alt="">
+            </div>
+          </div>
+          <div class="controlbox">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev swiper-button"><img src="assets/images/main/icon/s_arr_prev.svg"
+                alt="이전 슬라이더 보기"></div>
+            <div class="swiper-button-next swiper-button"><img src="assets/images/main/icon/s_arr_next.svg"
+                alt="다음 슬라이더 보기"></div>
+          </div>
+        </div>
+      </article>
+      <article id="cnt2">
+        <h3>Discover<br>
+          Your Tea
+        </h3>
+        <h4>다양한 녹차원의 대표제품</h4>
+
+        <div class="con_box p_r">
+          <ul class="clearfix">
+            <li><a href=""><img src="assets/images/main/tea1.png" alt=""><span>녹차/홍차/우롱차</span></a></li>
+            <li><a href=""><img src="assets/images/main/tea2.png" alt=""><span>스틱/분말류</span></a></li>
+            <li><a href=""><img src="assets/images/main/tea3.png" alt=""><span>액상차</span></a></li>
+            <li><a href=""><img src="assets/images/main/tea4.png" alt=""><span>꿀/시럽/포션</span></a></li>
+          </ul>
+          <div class="more p_a">
+            <a href="">더보기 <img class="more_icon" src="assets/images/main/icon/s_arr.png" alt=""></a>
+          </div>
+        </div>
+      </article>
+      <article id="cnt3">
+        <div class="colors">
+          <div class="sticky_content"><!-- position: sticky; top: 0 -->
+            <h3>New Product</h3>
+            <h4>새로나온 제품을 소개할게요</h4>
+            <div class="color_wrap">
+              <!-- position: relative -->
+              <div class="new1 opa1">
+                <span>반짝반짝<br>
+                  메리골드결명자차
+                </span>
+              </div>
+              <div class="new2">
+                <span>오늘 하루 굿나잇<br>
+                  캐모마일 감태차
+                </span>
+              </div>
+              <div class="new3">
+                <span>편안한 시간<br>
+                  대추 계피차
+                </span>
+              </div>
+              <div class="new4">
+                <span>따뜻한 습관<br>
+                  귤피 생강차
+                </span>
+              </div>
+            </div>
+            <div class="more">
+              <a href="">보러가기 <img class="more_icon" src="assets/images/main/icon/s_arr.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="cnt4">
+        <h3>Best Product</h3>
+        <h4>녹차원에서 가장 인기있는 제품이에요</h4>
+        <div class="more">
+          <a href="">더보기 <img class="more_icon" src="assets/images/main/icon/s_arr.png" alt=""></a></div>
+        <div class="swiper-container">
+          <!-- 슬라이더 상세내용 -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/images/main/best1.jpg" alt="">
+              <div class="tt">
+                <strong>귤피생강차 티백 10개입</strong>
+                <div class="pri">
+                  <p class="dprice">4,990원</p>
+                  <p class="price">3,990원</p>
+                </div>
+              </div>
+              <div class="pop">
+                <div class="sale">sale</div>
+                <div class="best">best</div>
+                <div class="md">MD추천</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/main/best2.jpg" alt="">
+              <div class="tt">
+                <strong>NFC 타트체리주스 480ml</strong>
+                <p class="price">9,900원</p>
+              </div>
+              <div class="pop">
+                <div class="best">best</div>
+                <div class="md">MD추천</div>
+                <div class="hot">hot</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/main/best3.jpg" alt="">
+              <div class="tt">
+                <strong>PLA 옥수수전분 빨대 250개</strong>
+                <p class="price">5,200원</p>
+              </div>
+              <div class="pop">
+                <div class="sale">sale</div>
+                <div class="best">best</div>
+                <div class="md">MD추천</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/main/best4.jpg" alt="">
+              <div class="tt">
+                <strong>휘게프 아메리카노 블랙 10입</strong>
+                <p class="price">5,900원</p>
+              </div>
+              <div class="pop">
+                <div class="sale">sale</div>
+                <div class="best">best</div>
+                <div class="md">MD추천</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/main/best5.jpg" alt="">
+              <div class="tt">
+                <strong>맛있는 녹차 작설 10티백</strong>
+                <p class="dprice">4,990원</p>
+                <p class="price">3,990원</p>
+              </div>
+              <div class="pop">
+                <div class="sale">sale</div>
+                <div class="best">best</div>
+                <div class="md">MD추천</div>
+              </div>
+            </div>
+          </div>
+          <!-- scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </article>
+      <article id="cnt5">
+        <h3>Event</h3>
+        <h4>이벤트</h4>
+
+        <div class="swiper-container">
+          <!-- 슬라이더 상세내용 -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/images/main/event1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/main/event2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/main/event3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/main/event4.jpg" alt="">
+            </div>
+          </div>
+          <div class="controlbox">
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </article>
+      <article id="cnt6">
+        <h3>Instagram</h3>
+        <h4>녹차원의 다양한 이벤트와 소식</h4>
+        <a href="https://www.instagram.com/nokchawon_official/">
+          <p>@nokchawon_official</p>
+        </a>
+        <div class="con_box p_r">
+          <ul class="clearfix">
+            <li><a href=""><img src="assets/images/main/sns1.jpg" alt=""></a></li>
+            <li><a href=""><img src="assets/images/main/sns2.jpg" alt=""></a></li>
+            <li><a href=""><img src="assets/images/main/sns3.jpg" alt=""></a></li>
+            <li><a href=""><img src="assets/images/main/sns4.jpg" alt=""></a></li>
+          </ul>
+          <div class="more p_a">
+            <a href="https://www.instagram.com/nokchawon_official/">보러가기 <img class="more_icon"
+                src="assets/images/main/icon/s_arr.png" alt=""></a>
+          </div>
+      </article>
+    </section>
+
+    <footer id="footer">
+      <a href=""><img src="assets/images/common/logo_color.png" alt="녹차원"></a>
+      <ul class="footer_btn">
+        <li><a href="">녹차원소개</a></li>
+        <li><a href="">이용약관</a></li>
+        <li><a href="">개인정보처리방침</a></li>
+      </ul>
+      <address>상호 : (주)녹차원 대표 : 김재삼<br>
+        주소 : 06678 서울특별시 서초구 서초대로4길 84(방배동)<br>
+        사업자번호 : 114-81-79367<br>
+        통신판매업신고 : 2004-서울서초-4186<br>
+        대표번호 : 02-597-3949<br>
+        이메일 : mall@nokchawon.co.kr</address>
+      <h5>고객만족팀 02-6747-2300</h5>
+      <p>운영 : 평일 10:00~19:00 / 점심 12:30~13:30<br>
+        주말 및 공휴일 휴무</p>
+      <p>COPYRIGHTS&copy;2020 (주)녹차원 ALL RIGHTS RESERVED</p>
+    </footer>
+  </div>
+</body>
+
+</html>
